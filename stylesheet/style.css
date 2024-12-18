@@ -1,0 +1,233 @@
+/* General Styles */
+body {
+    margin: 0; /* Elimina márgenes externos */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    margin: 5%;
+}
+
+/* Section MIS PRODUCTOS */
+.productos-contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 10px; /* Espaciado entre las tarjetas */
+    justify-items: center; /* Centra las tarjetas horizontalmente */
+    grid-auto-rows: 1fr; /* Establece la altura de cada fila a la misma medida */
+}
+
+.productos {
+    width: calc(100% - 20px);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; /* Ajusta el ancho al 100% de la tarjeta */
+    aspect-ratio: 1 / 1.5; /* Relación para tarjetas más estilizadas */
+    padding: 10px;
+    box-sizing: border-box;
+    height: 100%; /* Establece una altura fija para todas las tarjetas */
+}
+
+.card img {
+    width: 100%; /* Asegura que la imagen ocupe el ancho de la tarjeta */
+    height: 70%; /* Mantiene la proporción */
+    object-fit: cover;
+    border-radius: 4px; /* Opcional: bordes redondeados */
+    margin-bottom: auto; /* Empuja la imagen hacia arriba */
+}
+
+.card-container--info {
+    display: grid;
+    grid-template-rows: auto auto; /* Dos filas */
+    gap: 2px; /* Espaciado entre las filas */
+    width: 100%; /* Asegura que ocupe el ancho completo de la tarjeta */
+    padding: 2px; /* Reduce el espacio interior */
+    background-color: #2bb645;
+    font-size: 0.9rem; /* Reduce ligeramente el tamaño de fuente */
+    line-height: 1.2; /* Ajusta la altura de línea */
+}
+
+.info {
+    display: flex;
+    flex-direction: row; /* Coloca los elementos en una fila */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center;
+    height: 35%;
+    width: 110%; /* Ocupa el ancho completo del contenedor */
+    padding: 10px;
+    background-color: #7f0202; /* Fondo para destacar */
+    font-size: 14px;
+    color: #333;
+}
+
+.info p {
+    margin: 0;
+    padding: 0;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between; /* Posiciona los elementos en extremos opuestos */
+    align-items: center; /* Centra verticalmente */
+    width: 100%; /* Asegura el ancho completo */
+}
+
+.card-container--value img {
+    width: 20px; /* Tamaño fijo para el ícono */
+    height: 20px; /* Tamaño fijo para el ícono */
+    object-fit: contain; /* Asegura que mantenga proporción */
+    cursor: pointer; /* Indica interactividad */
+}
+
+/* Section AGREGA PRODUCTOS */
+.agregar-productos-seccion {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espacio entre elementos del formulario */
+    width: 90%;
+}
+
+form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #333;
+}
+
+form input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+form .button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px; /* Espacio entre botones */
+    justify-content: flex-start; /* Alinea los botones a la izquierda */
+    width: 100%;
+}
+
+form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3e009a;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #5300c8;
+}
+
+/* Header Styles */
+header, footer {
+    width: 100%;
+    margin: 0; /* Elimina márgenes que puedan reducir el ancho */
+    padding: 0; /* Elimina padding que pueda afectar el tamaño */
+    box-sizing: border-box; /* Asegura que el padding no altere el ancho total */
+    position: relative; /* Evita conflictos con otros posicionamientos */
+    left: 0; /* Alinea con el borde izquierdo de la pantalla */
+}
+
+header {
+    display: flex; /* Activamos Flexbox */
+    flex-direction: column;
+    align-items: center; /* Alineamos verticalmente al centro */
+    justify-content: center; /* Espaciamos uniformemente los elementos */
+    padding: 10px 10px; /* Agregamos un poco de espacio alrededor */
+    background-color: #5300c8; /* Color de fondo para diferenciar */
+}
+
+img {
+    width: auto; /* Permite que el logo mantenga proporciones naturales */
+    height: 100%; /* Aumentamos el tamaño del logo a 3 veces su altura aproximada inicial */
+}
+
+h1 {
+    font-size: 1.5rem; /* Ajustamos el tamaño del texto */
+    margin: 0; /* Eliminamos márgenes */
+    color: aliceblue; /* Un color para el texto */
+}
+
+/* Navigation Styles */
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+/* Footer */
+footer {
+    display: flex; /* Activamos Flexbox */
+    flex-direction: column;
+    align-items:center; /* Alineamos verticalmente al centro */
+    justify-content:center; /* Espaciamos uniformemente los elementos */
+    padding: 10px 10%; /* Agregamos un poco de espacio alrededor */
+    background-color: #5300c8; /* Color de fondo para diferenciar */
+    position: relative;
+    min-width: 100%; /* Asegura que ocupe el ancho completo */
+}
+
+p1, p2 {
+    color: aliceblue;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .productos-seccion {
+        width: 60%; /* Ocupa el 60% */
+        float: left; /* Se posiciona a la izquierda */
+    }
+    .agregar-productos-seccion {
+        width: 30%; /* Ocupa el 30% */
+        float: left; /* Se posiciona a la izquierda */
+        margin-left: 1%; /* Espaciado entre secciones */
+    }
+}
+
+@media (max-width: 767px) {
+    header, footer {
+        width: 100%;
+    }
+}

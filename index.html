@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek.</title>
+    <!-- Vinculación al archivo CSS -->
+    <link rel="stylesheet" href="stylesheet/style.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png" alt="logo alurageek">
+        <h1>Bienvenido a AluraGeek. </h1>
+    </header>
+    <main>
+        <section class="productos-seccion">
+        <h2>MIS PRODUCTOS</h2>
+        <div class="productos-contenedor">
+            <div class="card" data-producto>
+                <img src="imagenes-catalogo/Zapato 10.jpeg" alt="Zapato 10">
+                <div class="card-container--info">
+                    <p>Producto 10</p>
+                    <div class="card-container--value">
+                        <p>$ 100.00</p>
+                        <img src="imagenes/Bote basura.png" alt="Eliminar producto" class="btn-eliminar">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-producto>
+                <img src="imagenes-catalogo/Zapato 2.jpeg" alt="Zapato 2">
+                <div class="card-container--info">
+                    <p>Producto 2</p>
+                    <div class="card-container--value">
+                        <p>$ 20.00</p>
+                        <img src="imagenes/Bote basura.png" alt="Eliminar producto" class="btn-eliminar">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-producto>
+                <img src="imagenes-catalogo/Zapato 3.jpeg" alt="Zapato 3">
+                <div class="card-container--info">
+                    <p>Producto 3</p>
+                    <div class="card-container--value">
+                        <p>$ 30.00</p>
+                        <img src="imagenes/Bote basura.png" alt="Eliminar producto" class="btn-eliminar">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-producto>
+                <img src="imagenes-catalogo/Zapato 4.jpeg" alt="Zapato 4">
+                <div class="card-container--info">
+                    <p>Producto 4</p>
+                    <div class="card-container--value">
+                        <p>$ 40.00</p>
+                        <img src="imagenes/Bote basura.png" alt="Eliminar producto" class="btn-eliminar">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-producto>
+                <img src="imagenes-catalogo/Zapato 5.jpeg" alt="Zapato 5">
+                <div class="card-container--info">
+                    <p>Producto 5</p>
+                    <div class="card-container--value">
+                        <p>$ 50.00</p>
+                        <img src="imagenes/Bote basura.png" alt="Eliminar producto" class="btn-eliminar">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-producto>
+                <img src="imagenes-catalogo/Zapato 6.jpeg" alt="Zapato 6">
+                <div class="card-container--info">
+                    <p>Producto 6</p>
+                    <div class="card-container--value">
+                        <p>$ 60.00</p>
+                        <img src="imagenes/Bote basura.png" alt="Eliminar producto" class="btn-eliminar">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-producto>
+                <img src="imagenes-catalogo/Zapato 7.jpeg" alt="Zapato 7">
+                <div class="card-container--info">
+                    <p>Producto 7</p>
+                    <div class="card-container--value">
+                        <p>$ 70.00</p>
+                        <img src="imagenes/Bote basura.png" alt="Eliminar producto" class="btn-eliminar">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-producto>
+                <img src="imagenes-catalogo/Zapato 8.jpeg" alt="Zapato 8">
+                <div class="card-container--info">
+                    <p>Producto 8</p>
+                    <div class="card-container--value">
+                        <p>$ 80.00</p>
+                        <img src="imagenes/Bote basura.png" alt="Eliminar producto" class="btn-eliminar">
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-producto>
+                <img src="imagenes-catalogo/Zapato 9.jpeg" alt="Zapato 9">
+                <div class="card-container--info">
+                    <p>Producto 9</p>
+                    <div class="card-container--value">
+                        <p>$ 90.00</p>
+                        <img src="imagenes/Bote basura.png" alt="Eliminar producto" class="btn-eliminar">
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="agregar-productos-seccion">
+            <h3>AGREGA PRODUCTOS</h3>
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+        
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" step="0.01" required>
+        
+                <label for="imagen">Imagen:</label>
+                <input type="file" id="imagen" name="imagen" accept="image/*" required>
+        
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <img src="imagenes/logo.png" alt="logo alurageek">
+        <p1>DESARROLLADO POR DORIAN LOZA.</p1>
+        <p2>ALUARA LATAM 2024.</p2>
+    </footer>
+    <script src="js/codigoJs1.js"></script>
+</body>
+</html>
